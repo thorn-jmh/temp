@@ -14,12 +14,12 @@ from notify_scrapy.items import NoticeItem, HTMLContentItem
 
 
 class BaseMYSQLPipeline(object):
-    def __init__(self, mysql_uri, mysql_db, notice_collection, html_content_collection,
+    def __init__(self, mysql_uri, mysql_db,mysql_user,mysql_user_password,notice_collection, html_content_collection,
                  publishers_collection, publisher_groups_collection):
         self.mysql_uri = mysql_uri
         self.mysql_db = mysql_db
-        # self.user = "root"
-        # self.user_password = 'Notify'
+        self.user = mysql_user
+        self.user_password = mysql_user_password
         # self.cursor = cursor
         self.notice_collection = notice_collection
         self.html_content_collection = html_content_collection
@@ -32,8 +32,8 @@ class BaseMYSQLPipeline(object):
         return cls(
             mysql_uri=crawler.settings.get('MYSQL_URI'),
             mysql_db=crawler.settings.get('MYSQL_DATABASE', 'notify'),
-            # user=crawler.settings.get('MYSQL_USER', 'root'),
-            # user_password=crawler.settings.get('MYSQL_USER_PASSWORD', 'Notify'),
+            user=crawler.settings.get('MYSQL_USER', 'root'),
+            user_password=crawler.settings.get('MYSQL_USER_PASSWORD', 'Notify'),
             # cursor=None,
             notice_collection=crawler.settings.get('MYSQL_COLLECTION_NAME', 'notices'),
             html_content_collection=crawler.settings.get('MYSQL_HTML_CONTENT_COLLECTION_NAME', 'html_content'),
@@ -45,7 +45,7 @@ class BaseMYSQLPipeline(object):
     def open_spider(self, spider):
         # the user is 'root' and the password is 'Notify', change it if necessary
         # self.db = MySQLdb.connect(self.mysql_uri, "notify_2021", "ej5kQRbZBscU9f", self.mysql_db, charset='utf8')
-        self.db = MySQLdb.connect(host=self.mysql_uri, user="root", password="123456", database=self.mysql_db, charset='utf8')
+        self.db = MySQLdb.connect(host=self.mysql_uri, user=self.user, password=self.user_password, database=self.mysql_db, charset='utf8')
 
     def close_spider(self, spider):
         self.db.close()

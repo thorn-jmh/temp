@@ -93,8 +93,8 @@ NOTICE_TIME_LIMIT = datetime(2022, 2, 1, 0, 0, 0, 0)
 
 # Configure MySQL
 MYSQL_URI = '127.0.0.1'       # Change it if necessary
-MYSQL_USER = 'useless. This username is hard-coded in function "open_spider"'
-MYSQL_USER_PASSWORD = 'useless. This password is hard-coded in function "open_spider"'
+MYSQL_USER = 'root'
+MYSQL_USER_PASSWORD = '123456'
 MYSQL_DATABASE = 'notify_2021'
 MYSQL_COLLECTION_NAME = 'notices'
 MYSQL_HTML_CONTENT_COLLECTION_NAME = 'html_content'
