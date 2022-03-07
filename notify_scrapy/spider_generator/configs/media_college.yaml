@@ -1,0 +1,22 @@
+version: '3.3'
+
+name: media_college
+source: 31
+publisher: 传媒与国际文化学院
+initial_page: 1
+list_xpath: "//ul[@class=\"cg-news-list\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: "./span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  学院动态:
+    重点关注: http://www.cmic.zju.edu.cn/35553/list.htm
+    信息速递: http://www.cmic.zju.edu.cn/35554/list.htm
+    活动预告: http://www.cmic.zju.edu.cn/35555/list.htm
+  合作交流:
+    国际合作: http://www.cmic.zju.edu.cn/35577/list.htm
+  传媒风采:
+    学子风采: http://www.cmic.zju.edu.cn/xzfc/list.htm

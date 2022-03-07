@@ -1,0 +1,104 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+# WARNING: The spider need to be modified.
+
+name: cs_college
+source: 10
+publisher: 计算机科学与技术学院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w7\"]//div[@class=\"a\"]"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: "./span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  科学研究:
+    最新通知: http://cspo.zju.edu.cn/27159/list.htm
+    新闻动态: http://cspo.zju.edu.cn/27160/list.htm
+    公示信息: http://cspo.zju.edu.cn/27161/list.htm
+    科研政策: http://cspo.zju.edu.cn/27162/list.htm
+    办事流程: http://cspo.zju.edu.cn/27164/list.htm
+    文件下载: http://cspo.zju.edu.cn/27165/list.htm
+  本科生教育:
+    最新通知: http://cspo.zju.edu.cn/29529/list.htm
+  研究生教育:
+    最新通知: http://cspo.zju.edu.cn/27169/list.htm
+    新闻动态: http://cspo.zju.edu.cn/27170/list.htm
+    招生: http://cspo.zju.edu.cn/27171/list.htm
+    学籍与培养: http://cspo.zju.edu.cn/27172/list.htm
+    学位: http://cspo.zju.edu.cn/27173/list.htm
+    文件下载: http://cspo.zju.edu.cn/27174/list.htm
+  学生工作:
+    最新消息: http://cspo.zju.edu.cn/27175/list.htm
+    新闻动态: http://cspo.zju.edu.cn/27176/list.htm
+    党建工作: http://cspo.zju.edu.cn/27177/list.htm
+    团建工作: http://cspo.zju.edu.cn/27178/list.htm
+    学生事务:
+      评奖评优: http://cspo.zju.edu.cn/27183/list.htm
+      学生资助: http://cspo.zju.edu.cn/27184/list.htm
+      勤工助学: http://cspo.zju.edu.cn/27185/list.htm
+    学生组织:
+      本科生学生组织: http://cspo.zju.edu.cn/27186/list.htm
+      研究生学生组织: http://cspo.zju.edu.cn/27187/list.htm
+    学生活动: http://cspo.zju.edu.cn/27181/list.htm
+    文件下载: http://cspo.zju.edu.cn/27182/list.htm
+  就业工作:
+    最新通知: http://cspo.zju.edu.cn/27197/list.htm
+    重点引导: http://cspo.zju.edu.cn/27210/list.htm
+    新闻动态: http://cspo.zju.edu.cn/27198/list.htm
+    招聘信息:
+      央企国企: http://cspo.zju.edu.cn/27199/list.htm
+      选调生: http://cspo.zju.edu.cn/27203/list.htm
+      事业单位: http://cspo.zju.edu.cn/27204/list.htm
+      高校招聘: http://cspo.zju.edu.cn/27205/list.htm
+      企业招聘: http://cspo.zju.edu.cn/27206/list.htm
+    实习招聘:
+      重点企业: http://cspo.zju.edu.cn/27207/list.htm
+      一般企业: http://cspo.zju.edu.cn/27208/list.htm
+    职业生涯规划:
+      就业之星推荐: http://cspo.zju.edu.cn/27209/list.htm
+      职业规划咨询: http://cspo.zju.edu.cn/27211/list.htm
+      政策法规: http://cspo.zju.edu.cn/27212/list.htm
+      文件下载: http://cspo.zju.edu.cn/27213/list.htm
+  国际交流:
+    学生国际交流:
+      交流动态: http://cspo.zju.edu.cn/27214/list.htm
+      服务指南: http://cspo.zju.edu.cn/27222/list.htm
+      项目一览: http://cspo.zju.edu.cn/27220/list.htm
+    教师国际交流:
+      内部公示: http://cspo.zju.edu.cn/27223/list.htm
+      服务指南: http://cspo.zju.edu.cn/27224/list.htm
+    合作交流动态: http://cspo.zju.edu.cn/27216/list.htm
+    学术讲座: http://cspo.zju.edu.cn/27217/list.htm
+    外国专家: http://cspo.zju.edu.cn/27218/list.htm
+    国际会议: http://cspo.zju.edu.cn/27219/list.htm
+  发展中心:
+    最新通知: http://cspo.zju.edu.cn/27225/list.htm
+    新闻动态: http://cspo.zju.edu.cn/27226/list.htm
+    学科竞赛: http://cspo.zju.edu.cn/27228/list.htm
+    信息公告: http://cspo.zju.edu.cn/27232/list.htm
+  综合服务:
+    服务指南:
+      综合服务: http://cspo.zju.edu.cn/27235/list.htm
+      科学研究: http://cspo.zju.edu.cn/27237/list.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

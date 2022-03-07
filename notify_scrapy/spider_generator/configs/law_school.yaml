@@ -1,0 +1,29 @@
+version: '3.3'
+
+name: law_school
+source: 23
+publisher: 光华法学院
+initial_page: 1
+list_xpath: "//ul[@class=\"list_ul\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  首页:
+    信息公告: https://webplus.zju.edu.cn/_s331/15348/list.psp
+  教育教学:
+    本科生教育:
+      学籍管理: https://webplus.zju.edu.cn/_s331/16322/list.psp
+      培养过程: https://webplus.zju.edu.cn/_s331/16323/list.psp
+      实践环节: https://webplus.zju.edu.cn/_s331/16324/list.psp
+  国际交流:
+    相关通知: https://webplus.zju.edu.cn/_s331/16349/list.psp
+    遴选规则: https://webplus.zju.edu.cn/_s331/16350/list.psp
+    院级项目: https://webplus.zju.edu.cn/_s331/16351/list.psp
+    成果展示: https://webplus.zju.edu.cn/_s331/16352/list.psp
+    院设奖学金:
+      相关通知: https://webplus.zju.edu.cn/_s331/16311/list.psp
+      遴选规则: https://webplus.zju.edu.cn/_s331/16312/list.psp

@@ -1,0 +1,38 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: yunfeng_community
+source: 42
+publisher: 紫云碧峰学园
+initial_page: 1
+list_xpath: "//ul[@class=\"news_list list2\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"news_meta\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 学园行政
+pages:
+  学生党建:
+    通知公告: http://yunfeng.zju.edu.cn/on/53524/list.htm
+    新闻动态: http://yunfeng.zju.edu.cn/on/53525/list.htm
+    理论学习: http://yunfeng.zju.edu.cn/on/53526/list.htm
+    党建教育基地: http://yunfeng.zju.edu.cn/on/53527/list.htm
+  学生团建:
+    通知动态: http://yunfeng.zju.edu.cn/on/53529/list.htm
+  学生事务:
+    评奖评优: http://yunfeng.zju.edu.cn/on/53709/list.htm
+    学生资助:
+      通知公告: http://yunfeng.zju.edu.cn/on/53714/list.htm
+      NSEP: http://yunfeng.zju.edu.cn/on/53715/list.htm
+    活动记实: http://yunfeng.zju.edu.cn/on/53712/list.htm
+    心理健康:
+      通知公告: http://yunfeng.zju.edu.cn/on/53713/list.htm
+  教学教务:
+    最新通知: http://yunfeng.zju.edu.cn/on/53519/list.htm
+    培养方案: http://yunfeng.zju.edu.cn/on/53520/list.htm
+    学业指导: http://yunfeng.zju.edu.cn/on/53521/list.htm
+    相关文件: http://yunfeng.zju.edu.cn/on/53522/list.htm

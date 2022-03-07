@@ -1,0 +1,40 @@
+version: '3.3'
+
+name: mechanical_engineering_school
+source: 30
+publisher: 机械工程学院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w9\"]/ul//li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"column-news-date news-date-hide\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  学院新闻: http://me.zju.edu.cn/meoffice/xyxw/list.htm
+  通知公告: http://me.zju.edu.cn/meoffice/tzgg/list.htm
+  学术报告: http://me.zju.edu.cn/meoffice/xsbg/list.htm
+  本科生教育:
+    重要通知: http://me.zju.edu.cn/meoffice/6427/list.htm
+    规章制度: http://me.zju.edu.cn/meoffice/gzzd/list.htm
+    主修专业确认: http://me.zju.edu.cn/meoffice/zyqr/list.htm
+    推荐免试研究生: http://me.zju.edu.cn/meoffice/tjmsyjs/list.htm
+    毕业生管理: http://me.zju.edu.cn/meoffice/bysgl/list.htm
+    实践教学:
+      科研竞赛: http://me.zju.edu.cn/meoffice/kyjs/list.htm
+      实习: http://me.zju.edu.cn/meoffice/sx/list.htm
+      毕业论文(设计: http://me.zju.edu.cn/meoffice/bylwwsjw/list.htm
+  科学研究:
+    重要通知: http://me.zju.edu.cn/meoffice/6450/list.htm
+    学生工作:
+      重要通知: http://me.zju.edu.cn/meoffice/6469/list.htm
+      学生三会: http://me.zju.edu.cn/meoffice/6472/list.htm
+      奖贷三助: http://me.zju.edu.cn/meoffice/6473/list.htm
+      思政工作: http://me.zju.edu.cn/meoffice/6474/list.htm
+      荣誉成果: http://me.zju.edu.cn/meoffice/rycg/list.htm
+  国际交流:
+    通知公告: http://me.zju.edu.cn/meoffice/tzgg_42656/list.htm
+    最新动态: http://me.zju.edu.cn/meoffice/6477/list.htm
+
+

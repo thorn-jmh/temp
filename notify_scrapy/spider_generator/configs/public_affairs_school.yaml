@@ -1,0 +1,40 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: public_affairs_school
+source: 38
+publisher: 公共管理学院
+initial_page: 1
+list_xpath: "//div[@class=\"lbytb clearfix\"]"
+title_xpath: ".//a[2]/@title"
+url_xpath: ".//a[2]/@href"
+publish_time_xpath: "./div[@class=\"lbysj\"]/text()"
+publish_time_format: "[%Y-%m-%d]"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  本科生教育:
+    本科生事务:
+      制度文件: http://www.spa.zju.edu.cn/spaoffice/16807/list.htm
+      服务信息: http://www.spa.zju.edu.cn/spaoffice/16808/list.htm
+  学生思政:
+    学生党建:
+      本科生党建: http://www.spa.zju.edu.cn/spaoffice/14757/list.htm
+    学生团建: http://www.spa.zju.edu.cn/spaoffice/14508/list.htm
+    学工事务: http://www.spa.zju.edu.cn/spaoffice/14509/list.htm
+    就业指导: http://www.spa.zju.edu.cn/spaoffice/14511/list.htm
+    评奖评优:
+      本科生: http://www.spa.zju.edu.cn/spaoffice/14759/list.htm
+    心理资助:
+      本科生: http://www.spa.zju.edu.cn/spaoffice/14761/list.htm
+    学生组织:
+      本科生: http://www.spa.zju.edu.cn/spaoffice/14735/list.htm
+    表格下载:
+      党建: http://www.spa.zju.edu.cn/spaoffice/15129/list.htm
+  国际事务:
+    通知公告: http://www.spa.zju.edu.cn/spaoffice/14471/list.htm
+    学生交流: http://www.spa.zju.edu.cn/spaoffice/14473/list.htm
+    服务信息: http://www.spa.zju.edu.cn/spaoffice/14474/list.htm

@@ -1,0 +1,42 @@
+version: '3.3'
+
+name: env_college
+source: 17
+publisher: 环境与资源学院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w14\"]/ul[@class=\"clearfix\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"column-news-date news-date-hide\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_psp
+publisher_group: 专业院系
+pages:
+  本科生教育:
+    信息公告: https://webplus.zju.edu.cn/_s312/14553/list.psp
+    本科招生: 
+      主修专业确认: https://webplus.zju.edu.cn/_s312/16837/list.psp
+      三位一体: https://webplus.zju.edu.cn/_s312/swyt/list.psp
+    科研实践: https://webplus.zju.edu.cn/_s312/kysj/list.psp
+  学生在线: 
+    信息公告: https://webplus.zju.edu.cn/_s312/xxgg/list.psp
+    新闻动态: https://webplus.zju.edu.cn/_s312/18303/list.psp
+    党建工作:
+      党务工作: https://webplus.zju.edu.cn/_s312/dwgz/list.psp
+    团建工作: 
+      组织工作: https://webplus.zju.edu.cn/_s312/dwgz/list.psp
+      学术科技: https://webplus.zju.edu.cn/_s312/xskj/list.psp
+      社会实践: https://webplus.zju.edu.cn/_s312/shsj/list.psp
+      志愿服务: https://webplus.zju.edu.cn/_s312/zyfw/list.psp
+      班团风采: https://webplus.zju.edu.cn/_s312/btfc/list.psp
+    本科生事务:
+      事务管理: https://webplus.zju.edu.cn/_s312/swgl/list.psp
+      评奖评优: https://webplus.zju.edu.cn/_s312/pjpy_26686/list.psp
+      勤工资助: https://webplus.zju.edu.cn/_s312/qgzxyzz/list.psp
+      科研训练: https://webplus.zju.edu.cn/_s312/kyxl/list.psp
+      新生之友: https://webplus.zju.edu.cn/_s312/xszy/list.psp
+    表格下载: https://webplus.zju.edu.cn/_s312/bgxz/list.psp
+  国际交流: 
+    通知公告: https://webplus.zju.edu.cn/_s312/14076/list.psp
+    出国出境:
+      学生出国出境: https://webplus.zju.edu.cn/_s312/14596/list.psp

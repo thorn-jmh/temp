@@ -1,0 +1,43 @@
+version: '3.3'
+
+name: lantian_community
+source: 22
+publisher: 蓝田学园
+initial_page: 1
+list_xpath: "//ul[@class=\"news_list list2\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"news_meta\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 学园行政
+pages:
+  党建园地:
+    党员素质发展中心: http://lantian.zju.edu.cn/ltoffice/14397/list.htm
+    红船快讯: http://lantian.zju.edu.cn/ltoffice/14399/list.htm
+  团学园地:
+    团委发文: http://lantian.zju.edu.cn/ltoffice/twfw/list.htm
+    一周活动预告: http://lantian.zju.edu.cn/ltoffice/yzhdyg/list.htm
+    分团委学生团队:
+      组织工作: http://lantian.zju.edu.cn/ltoffice/zzgz/list.htm
+      志愿服务: http://lantian.zju.edu.cn/ltoffice/14404/list.htm
+      社会实践: http://lantian.zju.edu.cn/ltoffice/14405/list.htm
+      素质拓展: http://lantian.zju.edu.cn/ltoffice/14406/list.htm
+      学生会: http://lantian.zju.edu.cn/ltoffice/xsh/list.htm
+      文体发展中心:
+        文体发展中心: http://lantian.zju.edu.cn/ltoffice/27360/list.htm
+        体育发展中心: http://lantian.zju.edu.cn/ltoffice/27364/list.htm
+      班团风采: http://lantian.zju.edu.cn/ltoffice/14402/list.htm
+  学生事务:
+    资助工作: http://lantian.zju.edu.cn/ltoffice/14413/list.htm
+    评奖评优: http://lantian.zju.edu.cn/ltoffice/14414/list.htm
+    综合事务管理中心: http://lantian.zju.edu.cn/ltoffice/27366/list.htm
+    心理健康教育中心: http://lantian.zju.edu.cn/ltoffice/27367/list.htm
+    学生权益服务中心: http://lantian.zju.edu.cn/ltoffice/xsqyfwzx/list.htm
+  学业园地:
+    专业引导: http://lantian.zju.edu.cn/ltoffice/14419/list.htm
+    学务管理: http://lantian.zju.edu.cn/ltoffice/14417/list.htm
+    学风建设: http://lantian.zju.edu.cn/ltoffice/14418/list.htm
+    学业发展中心: http://lantian.zju.edu.cn/ltoffice/14416/list.htm
+
+

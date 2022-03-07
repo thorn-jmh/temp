@@ -1,0 +1,71 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: economics_school
+source: 14
+publisher: 经济学院
+initial_page: 1
+list_xpath: "//ul[@class=\"list-items\"]/li"
+title_xpath: ".//a/text()"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//i/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  学院党政:
+    会议通知: http://www.cec.zju.edu.cn/hytz_36106/list.htm
+    会议纪要: http://www.cec.zju.edu.cn/hyjy/list.htm
+    学院发文: http://www.cec.zju.edu.cn/xyfw/list.htm
+    党务工作: http://www.cec.zju.edu.cn/dwgz/list.htm
+    工会之声: http://www.cec.zju.edu.cn/ghzs/list.htm
+    理论学习: http://www.cec.zju.edu.cn/llxx/list.htm
+    平安学院: http://www.cec.zju.edu.cn/paxy/list.htm
+  本科生教育:
+   最新消息: http://www.cec.zju.edu.cn/zxxx/list.htm
+  规章制度:
+    文件汇编: http://www.cec.zju.edu.cn/wjhb_36403/list.htm
+    会议纪要: http://www.cec.zju.edu.cn/hyjy_36404/list.htm
+    办事流程: http://www.cec.zju.edu.cn/bslc/list.htm
+  招生信息: http://www.cec.zju.edu.cn/zsxx/list.htm
+  主修专业确认: http://www.cec.zju.edu.cn/zxzyqr/list.htm
+  学籍管理: http://www.cec.zju.edu.cn/xjgl/list.htm
+  教学与教务: http://www.cec.zju.edu.cn/jxyjw/list.htm
+  毕业论文: http://www.cec.zju.edu.cn/bylw/list.htm
+  科研训练: http://www.cec.zju.edu.cn/kyxl/list.htm
+  实习实践: http://www.cec.zju.edu.cn/sxsj/list.htm
+对外交流:
+  对外交流: http://www.cec.zju.edu.cn/dwjl/list.htm
+  教学成果: http://www.cec.zju.edu.cn/jxcg/list.htm
+  培养计划: http://www.cec.zju.edu.cn/pyjh/list.htm
+  推荐免试研究生: http://www.cec.zju.edu.cn/tjmsyjs/list.htm
+学生思政:
+  重要通知: http://www.cec.zju.edu.cn/zytz/list.htm
+  新闻动态: http://www.cec.zju.edu.cn/xwdt/list.htm
+  本科生思政:
+    党团建设: http://www.cec.zju.edu.cn/jdgz/list.htm
+    评奖评优: http://www.cec.zju.edu.cn/pjpy/list.htm
+    资助勤工: http://www.cec.zju.edu.cn/knsgz/list.htm
+    实践创新: http://www.cec.zju.edu.cn/sjcx/list.htm
+    其他信息: http://www.cec.zju.edu.cn/qtxx/list.htm
+    就业指导:
+    友情链接: http://www.career.zju.edu.cn/jyxt/jyweb/xywzIndex.zf?wzid=A47AB86DA63D80C5E055134CA39C9BD7
+  学生组织: http://www.cec.zju.edu.cn/xszz/list.htm
+科学研究:
+  最新通知: http://www.cec.zju.edu.cn/45030/list.htm
+  学术消息: http://www.cec.zju.edu.cn/45031/list.htm
+  研究中心所: http://www.cec.zju.edu.cn/45032/list.htm
+  科研项目: http://www.cec.zju.edu.cn/45033/list.htm
+  专家观点: http://www.cec.zju.edu.cn/45034/list.htm
+国际交流:
+  最新消息: http://www.cec.zju.edu.cn/zxxx_36164/list.htm
+  学生项目: http://www.cec.zju.edu.cn/gjjl/list.htm
+  学术交流: http://www.cec.zju.edu.cn/xsjl/list.htm
+  出国出境: http://www.cec.zju.edu.cn/cgcj/list.htm
+  国际学分项目: http://www.cec.zju.edu.cn/gjxfxm/list.htm
+  国际学生: http://www.cec.zju.edu.cn/gjxs/list.htm
+  办事流程: http://www.cec.zju.edu.cn/bgxz_36168/list.htm
+  文件汇编: http://www.cec.zju.edu.cn/wjhb_57656/list.htm

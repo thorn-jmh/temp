@@ -1,0 +1,76 @@
+version: '3.3'
+
+name: agriculture_college
+source: 2
+publisher: 农业与生物技术学院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w29\"]/ul[@class=\"wp_article_list\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"Article_PublishDate\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  首页:
+    最新通知: http://www.cab.zju.edu.cn/bgw/7522/list.htm
+    公告公示: http://www.cab.zju.edu.cn/bgw/28889/list.htm
+  党政综合:
+    规章制度: http://www.cab.zju.edu.cn/bgw/28956/list.htm
+    党委文件: http://www.cab.zju.edu.cn/bgw/28957/list.htm
+    学院年报: http://www.cab.zju.edu.cn/bgw/28961/list.htm
+    安全稳定:
+      相关通知: http://www.cab.zju.edu.cn/bgw/29085/list.htm
+      实验室安全: http://www.cab.zju.edu.cn/bgw/29086/list.htm
+      设备管理: http://www.cab.zju.edu.cn/bgw/29087/list.htm
+      电子门锁: http://www.cab.zju.edu.cn/bgw/29088/list.htm
+    表格下载: http://www.cab.zju.edu.cn/bgw/28963/list.htm
+  组织人事:
+    最新通知: http://www.cab.zju.edu.cn/bgw/28964/list.htm
+  本科生教育:
+    通知公告: http://www.cab.zju.edu.cn/bgw/28971/list.htm
+    新闻动态: http://www.cab.zju.edu.cn/bgw/xwdt_47071/list.htm
+    教学培养: http://www.cab.zju.edu.cn/bgw/28972/list.htm
+    对外交流: http://www.cab.zju.edu.cn/bgw/28974/list.htm
+    文件汇编: http://www.cab.zju.edu.cn/bgw/28977/list.htm
+    表格下载: http://www.cab.zju.edu.cn/bgw/28978/list.htm
+  研究生教育:
+    最新通知: http://www.cab.zju.edu.cn/bgw/28979/list.htm
+    招生信息: http://www.cab.zju.edu.cn/bgw/28981/list.htm
+  科研与地方合作:
+    最新通知: http://www.cab.zju.edu.cn/bgw/28989/list.htm
+    科研政策: http://www.cab.zju.edu.cn/bgw/28991/list.htm
+    科研项目: http://www.cab.zju.edu.cn/bgw/28992/list.htm
+    科研成果:
+      科研论文: http://www.cab.zju.edu.cn/bgw/29022/list.htm
+      科研奖励: http://www.cab.zju.edu.cn/bgw/29023/list.htm
+      授权专利: http://www.cab.zju.edu.cn/bgw/29024/list.htm
+      审定品种: http://www.cab.zju.edu.cn/bgw/29025/list.htm
+      其他成果: http://www.cab.zju.edu.cn/bgw/qtcg/list.htm
+    办事流程: http://www.cab.zju.edu.cn/bgw/28997/list.htm
+    下载专区: http://www.cab.zju.edu.cn/bgw/28998/list.htm
+  国际合作与交流:
+    通知公告: http://www.cab.zju.edu.cn/bgw/28999/list.htm
+    师生交流: http://www.cab.zju.edu.cn/bgw/29000/list.htm
+    办事指南: http://www.cab.zju.edu.cn/bgw/29001/list.htm
+  学院工会:
+    最新通知: http://www.cab.zju.edu.cn/bgw/29003/list.htm
+    服务信息: http://www.cab.zju.edu.cn/bgw/29006/list.htm
+  党建工作:
+    重要通知: http://www.cab.zju.edu.cn/bgw/29010/list.htm
+    公示公告: http://www.cab.zju.edu.cn/bgw/gsgg/list.htm
+    文件资料:
+      上级文件: http://www.cab.zju.edu.cn/bgw/29012/list.htm
+      学院发文: http://www.cab.zju.edu.cn/bgw/xyfw/list.htm
+    党务工作: http://www.cab.zju.edu.cn/bgw/dwgz/list.htm
+    表格下载: http://www.cab.zju.edu.cn/bgw/bgxz_43310/list.htm
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+version: '3.2'
+
+
+name: polymer_depart
+source: 36
+publisher: 高分子科学与工程学系
+initial_page: 0
+list_xpath: "//div[@id=\"wp_news_w11\"]/li[@class=\"list-item\"]"
+title_xpath: ".//div[@class=\"content\"]//h3/@title"
+url_xpath: "./a/@href"
+publish_time_xpath: ".//p[@class=\"md\"]/text()"
+publish_time_xpath_extra: ".//div[@class=\"date fl\"]/p[@class=\"year\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  本科生教育:
+    专业设置: http://office.polymer.zju.edu.cn/zysz/list.htm
+    实践教学: http://office.polymer.zju.edu.cn/sjjx/list.htm
+  学生工作:
+    就业指导: http://office.polymer.zju.edu.cn/jyzd/list.htm
+    系团委: http://office.polymer.zju.edu.cn/xtw/list.htm
+    学生会: http://office.polymer.zju.edu.cn/xtw/list.htm
+    就业信息: http://office.polymer.zju.edu.cn/jyxx/list.htm
+    三助管理: http://office.polymer.zju.edu.cn/szgl/list.htm

@@ -1,0 +1,31 @@
+version: '3.3'
+
+name: pharmaceutical_college
+source: 34
+publisher: 药学院
+initial_page: 1
+list_xpath: "//ul[@class=\"news-ul\"]/li"
+title_xpath: ".//a[2]/text()"
+url_xpath: ".//a[1]/@href"
+publish_time_xpath: "./span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  学工团委:
+    重要通知: http://office.cps.zju.edu.cn/zytz_26474/list.htm
+    评奖评优: http://office.cps.zju.edu.cn/pjpy/list.htm
+    就业工作: http://office.cps.zju.edu.cn/jygz/list.htm
+    信息动态: http://office.cps.zju.edu.cn/xxdt_26475/list.htm
+    党团建设: http://office.cps.zju.edu.cn/dtjs/list.htm
+    勤工资助: http://office.cps.zju.edu.cn/qgzz/list.htm
+  本科生教育:
+    教学教务: http://office.cps.zju.edu.cn/jxjw/list.htm
+    教学教改: http://office.cps.zju.edu.cn/jxjg/list.htm
+    专业确认: http://office.cps.zju.edu.cn/zyqr/list.htm
+    科研训练: http://office.cps.zju.edu.cn/kyxl/list.htm
+    毕业实习: http://office.cps.zju.edu.cn/bysx/list.htm
+  国际交流:
+    重要通知: http://office.cps.zju.edu.cn/zytz_26502/list.htm
+    信息动态: http://office.cps.zju.edu.cn/xxdt_26503/list.htm
+    国际交流项目: http://office.cps.zju.edu.cn/gjjlxm/list.htm

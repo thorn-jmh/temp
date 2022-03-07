@@ -1,0 +1,38 @@
+version: '3.2'
+
+name: animal_college
+source: 3
+publisher: 动物科学学院
+initial_page: 1
+list_xpath: "//ul[@class=\"news_list list2\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"news_meta\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  网站首页:
+    全部: http://office.cas.zju.edu.cn/qb/list.htm
+    首页:
+      重点提示: http://office.cas.zju.edu.cn/15048/list.htm
+  本科生教育:
+    实践竞赛:
+      实践教学: http://office.cas.zju.edu.cn/16447/list.htm
+      科研训练: http://office.cas.zju.edu.cn/16448/list.htm
+    课程建设: http://office.cas.zju.edu.cn/15891/list.htm
+    表格下载: http://office.cas.zju.edu.cn/15892/list.htm
+  研究生教育:
+    招生专栏:
+      硕士生招生: http://office.cas.zju.edu.cn/15965/list.htm
+      博士生招生: http://office.cas.zju.edu.cn/15966/list.htm
+  学子在线:
+    学生党建: http://office.cas.zju.edu.cn/15925/list.htm
+    团建工作: http://office.cas.zju.edu.cn/15928/list.htm
+    本科生事务: http://office.cas.zju.edu.cn/15926/list.htm
+    就业工作: http://office.cas.zju.edu.cn/15929/list.htm
+    资料下载: http://office.cas.zju.edu.cn/15930/list.htm
+  国际交流:
+    通知公告: http://office.cas.zju.edu.cn/15893/list.htm
+    交流项目:
+      本科生: http://office.cas.zju.edu.cn/15898/list.htm

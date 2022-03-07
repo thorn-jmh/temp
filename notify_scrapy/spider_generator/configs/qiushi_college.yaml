@@ -1,0 +1,19 @@
+version: '3.3'
+
+name: qiushi_college
+source: 39
+publisher: 求是学院
+initial_page: 1
+list_xpath: "//ul[@class=\"news_list list2\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: "./span[@class=\"news_meta\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 学校部门
+pages:
+  文件汇编:
+    党委文件: http://qsxy.zju.edu.cn/30812/list.htm
+    教学教务相关文件: http://qsxy.zju.edu.cn/30811/list.htm
+    学院制度建设: http://qsxy.zju.edu.cn/30813/list.htm
+    学院年鉴: http://qsxy.zju.edu.cn/xynj/list.htm

@@ -1,0 +1,51 @@
+version: '3.3'
+
+name: global_engagement
+source: 18
+publisher: 国际合作与交流处
+initial_page: 1
+list_xpath: "//ul[@class=\"cg-news-list news\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"art-date\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 学院行政
+pages:
+  合作交流:
+    学生项目: http://www.ir.zju.edu.cn/131/list.htm
+  出国出境:
+    规章制度: http://www.ir.zju.edu.cn/140/list.htm
+    通知公告: http://www.ir.zju.edu.cn/140a/list.htm
+    信息公开: http://www.ir.zju.edu.cn/145/list.htm
+  国际会议:
+    通知公告: http://www.ir.zju.edu.cn/147/list.htm
+    最新动态: http://www.ir.zju.edu.cn/146/list.htm
+  港澳台事务:
+    学生交流:
+      项目通知: http://www.ir.zju.edu.cn/146/list.htm
+    交流动态: http://www.ir.zju.edu.cn/13167/list.htm
+    重要通知: http://www.ir.zju.edu.cn/13168/list.htm
+  党建园地:
+    公告公示: http://www.ir.zju.edu.cn/163/list.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

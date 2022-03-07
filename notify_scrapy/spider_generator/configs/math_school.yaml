@@ -1,0 +1,34 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: math_school
+source: 29
+publisher: 数学科学学院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w12\"]//li"
+title_xpath: ".//p[@class=\"title\"]/text()"
+url_xpath: "./a/@href"
+publish_time_xpath: ".//div[@class=\"date\"]/p[@class=\"d\"]/text()"
+publish_time_xpath_extra: ".//div[@class=\"date\"]/p[@class=\"y\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  本科生:
+    信息公告: http://www.math.zju.edu.cn/38077/list.htm
+    学籍管理: http://www.math.zju.edu.cn/38080/list.htm
+    科研训练: http://www.math.zju.edu.cn/38081/list.htm
+    政策文件: http://www.math.zju.edu.cn/38082/list.htm
+    招生工作: http://www.math.zju.edu.cn/38083/list.htm
+  党群学工:
+    学生新闻通知: http://www.math.zju.edu.cn/38098/list.htm
+    就业信息: http://www.career.zju.edu.cn/jyxt/jyweb/xywzIndex.zf?wzid=A47AB86DA64380C5E055134CA39C9BD7
+    评奖评优: http://www.math.zju.edu.cn/38100/list.htm
+    学生资助: http://www.math.zju.edu.cn/38101/list.htm
+    学生文件资料: http://www.math.zju.edu.cn/38102/list.htm
+  通知公告:
+    重要通知: http://www.math.zju.edu.cn/zytz/list.htm
+    本科生: http://www.math.zju.edu.cn/bkstz/list.htm

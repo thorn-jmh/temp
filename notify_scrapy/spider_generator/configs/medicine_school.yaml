@@ -1,0 +1,41 @@
+version: '3.3'
+
+name: medicine_school
+source: 32
+publisher: 医学院
+initial_page: 1
+list_xpath: "//ul[@class=\"yixue-news-ul\"]/li"
+title_xpath: ".//p[@class=\"yixue-news-first-p\"]/text()"
+url_xpath: ".//a/@href"
+publish_time_xpath: "./p[@class=\"yixue-news-second-p\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  教育教学:
+    本科生教育:
+      日常通知: http://www.cmm.zju.edu.cn/38704/list.htm
+      重点提示: http://www.cmm.zju.edu.cn/38712/list.htm
+      考务管理: http://www.cmm.zju.edu.cn/44371/list.htm
+      对外交流: http://www.cmm.zju.edu.cn/44372/list.htm
+      文件制度: http://www.cmm.zju.edu.cn/44373/list.htm
+  合作交流:
+    国际交流: http://www.cmm.zju.edu.cn/38775/list.htm
+  学生工作:
+    本科生:
+      新闻动态: http://www.cmm.zju.edu.cn/38789/list.htm
+      学生党建: http://www.cmm.zju.edu.cn/44371/list.htm
+      评奖评优: http://www.cmm.zju.edu.cn/38791/list.htm
+      学生资助: http://www.cmm.zju.edu.cn/38792/list.htm
+      就业指导: http://www.cmm.zju.edu.cn/38793/list.htm
+      其他工作: http://www.cmm.zju.edu.cn/38794/list.htm
+      年级管理: http://www.cmm.zju.edu.cn/38795/list.htm
+    团委:
+      重要通知: http://www.cmm.zju.edu.cn/38806/list.htm
+      组织宣传: http://www.cmm.zju.edu.cn/44371/list.htm
+      志愿服务: http://www.cmm.zju.edu.cn/38804/list.htm
+      社会实践: http://www.cmm.zju.edu.cn/38803/list.htm
+      素质拓展: http://www.cmm.zju.edu.cn/38802/list.htm
+      科技文化: http://www.cmm.zju.edu.cn/38801/list.htm
+      学生社团: http://www.cmm.zju.edu.cn/38800/list.htm
+      学生会: http://www.cmm.zju.edu.cn/38799/list.htm

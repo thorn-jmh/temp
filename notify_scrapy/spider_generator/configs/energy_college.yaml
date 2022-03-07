@@ -1,0 +1,52 @@
+version: '3.3'
+
+name: energy_college
+source: 16
+publisher: 能源工程学院
+initial_page: 1
+list_xpath: "//ul[@class=\"cg-news-list\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  能源新闻:
+    能源要闻: http://doe-oa.zju.edu.cn/nyyw/list1.htm
+    学术进展: http://doe-oa.zju.edu.cn/xsjz_30730/list.htm
+    快讯:
+      学术活动: http://doe-oa.zju.edu.cn/xshd/list.htm
+      支部风采: http://doe-oa.zju.edu.cn/zbfc/list.htm
+      工会活动: http://doe-oa.zju.edu.cn/ghhd/list.htm
+      学生活动: http://doe-oa.zju.edu.cn/xshd_30740/list.htm
+      学院综合: http://doe-oa.zju.edu.cn/xyzh/list.htm
+  本科生教育:
+    信息公告: http://doe-oa.zju.edu.cn/24611/list.htm
+    专业确认: http://doe-oa.zju.edu.cn/24612/list.htm
+  科学研究:
+    信息公告: http://doe-oa.zju.edu.cn/24628/list.htm
+    科研动态: http://doe-oa.zju.edu.cn/24629/list.htm
+    科研成果: http://doe-oa.zju.edu.cn/24630/list.htm
+    文件汇编:
+      学校文件: http://doe-oa.zju.edu.cn/24817/list.htm
+      学校以外文件: http://doe-oa.zju.edu.cn/24818/list.htm
+      科研经费相关文件: http://doe-oa.zju.edu.cn/24819/list.htm
+  学生工作:
+    团委: http://doe-oa.zju.edu.cn/24633/list.htm
+    学生党建: http://doe-oa.zju.edu.cn/24634/list.htm
+    学工: http://doe-oa.zju.edu.cn/24635/list.htm
+    研工: http://doe-oa.zju.edu.cn/24636/list.htm
+    学生会: http://doe-oa.zju.edu.cn/24637/list.htm
+  就业指导:
+    重点引导: http://doe-oa.zju.edu.cn/zdyd/list.htm
+    通知公告: http://doe-oa.zju.edu.cn/24821/list.htm
+    招聘信息:
+      招聘信息: http://doe-oa.zju.edu.cn/24822/list.htm
+      党政机关: http://doe-oa.zju.edu.cn/56885/list.htm
+      事业单位: http://doe-oa.zju.edu.cn/56886/list.htm
+      企业单位: http://doe-oa.zju.edu.cn/56887/list.htm
+
+
+
+

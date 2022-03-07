@@ -1,0 +1,26 @@
+version: '3.3'
+
+name: undergraduate_school
+source: 41
+publisher: 本科生院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w17\"]/li"
+title_xpath: "./a/text()"
+url_xpath: "./a/@href"
+publish_time_xpath: "./span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 行政部门
+pages:
+  新闻动态:
+    新闻动态: http://ugrs.zju.edu.cn/_t1258/28259/list.htm
+    媒体报道: http://ugrs.zju.edu.cn/28260/list.htm
+  科研训练:
+    校院级: http://ugrs.zju.edu.cn/28192/list.htm
+    省级: http://ugrs.zju.edu.cn/28193/list.htm
+    国家级: http://ugrs.zju.edu.cn/28194/list.htm
+  学科竞赛: http://ugrs.zju.edu.cn/28190/list.htm
+
+
+
+

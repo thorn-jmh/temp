@@ -1,0 +1,36 @@
+version: '3.3'
+
+name: physics_depart
+source: 35
+publisher: 物理学系
+initial_page: 1
+list_xpath: "//ul[@class=\"art_list\"]/li"
+title_xpath: ".//a[@target=\"_blank\"]/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: "./span/text()"
+publish_time_format: "[%Y-%m-%d]"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  科学研究:
+    学术信息: http://office.physics.zju.edu.cn/39158/list.htm
+    科研成果: http://office.physics.zju.edu.cn/39159/list.htm
+    科研项目: http://office.physics.zju.edu.cn/39162/list.htm
+    最新通知: http://office.physics.zju.edu.cn/39131/list.htm
+  本科生教育:
+    本科生科研项目: http://office.physics.zju.edu.cn/39170/list.htm
+    服务指南:
+      办事指南: http://office.physics.zju.edu.cn/39171/list.htm
+      各类文件: http://office.physics.zju.edu.cn/39212/list.htm
+  求是科学班:
+    招生信息: http://office.physics.zju.edu.cn/39172/list.htm
+    毕业设计: http://office.physics.zju.edu.cn/39173/list.htm
+    培养方案: http://office.physics.zju.edu.cn/39218/list.htm
+    科研训练: http://office.physics.zju.edu.cn/39219/list.htm
+  学生思政:
+    本科生思政:
+      党建团建: http://office.physics.zju.edu.cn/39240/list.htm
+      学生活动: http://office.physics.zju.edu.cn/39241/list.htm
+      奖助学金: http://office.physics.zju.edu.cn/39242/list.htm
+      就业信息: http://office.physics.zju.edu.cn/39243/list.htm
+    下载专区: http://office.physics.zju.edu.cn/39190/list.htm

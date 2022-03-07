@@ -1,0 +1,49 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: inter_studies_school
+source: 19
+publisher: 外国语言文化与国际交流学院
+initial_page: 1
+list_xpath: "//ul[@class=\"news_list list2\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: "./span[@class=\"news_meta\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  党政管理:
+    最新通知: http://www.sis.zju.edu.cn/sischinese/12554/list.htm
+    党委文件: http://www.sis.zju.edu.cn/sischinese/12555/list.htm
+    资料中心: http://www.sis.zju.edu.cn/sischinese/12559/list.htm
+    实验中心: http://www.sis.zju.edu.cn/sischinese/12560/list.htm
+    工会之家: http://www.sis.zju.edu.cn/sischinese/12561/list.htm
+    常用信息: http://www.sis.zju.edu.cn/sischinese/12562/list.htm
+  科学研究:
+    最新通知: http://www.sis.zju.edu.cn/sischinese/12572/list.htm
+    各类申报: http://www.sis.zju.edu.cn/sischinese/12573/list.htm
+    学术动态: http://www.sis.zju.edu.cn/sischinese/12574/list.htm
+    科研成果: http://www.sis.zju.edu.cn/sischinese/12575/list.htm
+    常用信息: http://www.sis.zju.edu.cn/sischinese/12576/list.htm
+  本科教育:
+    最新通知: http://www.sis.zju.edu.cn/sischinese/12577/list.htm
+    学籍管理: http://www.sis.zju.edu.cn/sischinese/12578/list.htm
+    教学教务: http://www.sis.zju.edu.cn/sischinese/12579/list.htm
+    常用信息: http://www.sis.zju.edu.cn/sischinese/12583/list.htm
+  学生思政:
+    最新通知: http://www.sis.zju.edu.cn/sischinese/12593/list.htm
+    党团建设: http://www.sis.zju.edu.cn/sischinese/12594/list.htm
+    就业指导: http://www.sis.zju.edu.cn/sischinese/12595/list.htm
+    评奖评优: http://www.sis.zju.edu.cn/sischinese/12596/list.htm
+    学生资助: http://www.sis.zju.edu.cn/sischinese/12597/list.htm
+    公益实践: http://www.sis.zju.edu.cn/sischinese/12598/list.htm
+    学生组织: http://www.sis.zju.edu.cn/sischinese/12600/list.htm
+    常用信息: http://www.sis.zju.edu.cn/sischinese/12602/list.htm
+  对外交流:
+    最新通知: http://www.sis.zju.edu.cn/sischinese/12609/list.htm
+    地方合作: http://www.sis.zju.edu.cn/sischinese/12630/list.htm
+    常用信息: http://www.sis.zju.edu.cn/sischinese/12612/list.htm

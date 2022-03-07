@@ -1,0 +1,14 @@
+# ide
+.idea
+.vs
+
+# python
+__pycache__
+venv
+
+# scrapyd-deploy
+/build
+/dbs
+/eggs
+/logs
+/*.egg-info

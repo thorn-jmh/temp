@@ -1,0 +1,68 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: beis_college
+source: 5
+publisher: 生物医学工程与仪器科学学院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w35\"]//li"
+title_xpath: ".//@title"
+url_xpath: "./a/@href"
+publish_time_xpath: ".//span/text()"
+publish_time_format: "%Y-%m-%d"
+publisher_group: 专业院系
+pages_converter: list_dot_htm
+pages:
+  院党政办:
+    工作通报: http://office.cbeis.zju.edu.cn/23347/list.htm
+    学院文件: http://office.cbeis.zju.edu.cn/23348/list.htm
+    会议纪要: http://office.cbeis.zju.edu.cn/23349/list.htm
+    规章制度: http://office.cbeis.zju.edu.cn/23350/list.htm
+    工作职责: http://office.cbeis.zju.edu.cn/23353/list.htm
+  队伍建设:
+    通知公告: http://office.cbeis.zju.edu.cn/23354/list.htm
+    师资队伍: http://office.cbeis.zju.edu.cn/23355/list.htm
+    人才引进: http://office.cbeis.zju.edu.cn/23356/list.htm
+    管理制度: http://office.cbeis.zju.edu.cn/23357/list.htm
+  科研管理:
+    通知公告: http://office.cbeis.zju.edu.cn/23358/list.htm
+    科研成果: http://office.cbeis.zju.edu.cn/23360/list.htm
+    科研政策: http://office.cbeis.zju.edu.cn/23361/list.htm
+    科研动态: http://office.cbeis.zju.edu.cn/23362/list.htm
+  本科生教学:
+    通知公告: http://office.cbeis.zju.edu.cn/23363/list.htm
+    会议纪要: http://office.cbeis.zju.edu.cn/23364/list.htm
+    文件汇编: http://office.cbeis.zju.edu.cn/23365/list.htm
+    表格下载: http://office.cbeis.zju.edu.cn/23366/list.htm
+    专业确认: http://office.cbeis.zju.edu.cn/23367/list.htm
+    服务指南: http://office.cbeis.zju.edu.cn/23368/list.htm
+    本科新闻: http://office.cbeis.zju.edu.cn/23369/list.htm
+  研究生教学:
+    招生信息: http://office.cbeis.zju.edu.cn/23370/list.htm
+    通知公告: http://office.cbeis.zju.edu.cn/23371/list.htm
+    文件汇编: http://office.cbeis.zju.edu.cn/23373/list.htm
+    新闻列表: http://office.cbeis.zju.edu.cn/23374/list.htm
+  思政工作:
+    通知公告: http://office.cbeis.zju.edu.cn/23375/list.htm
+    学生党建: http://office.cbeis.zju.edu.cn/23377/list.htm
+    学院团委: http://office.cbeis.zju.edu.cn/23378/list.htm
+    思政新闻: http://office.cbeis.zju.edu.cn/23379/list.htm
+  对外交流:
+    通知公告: http://office.cbeis.zju.edu.cn/23380/list.htm
+    交流项目: http://office.cbeis.zju.edu.cn/23381/list.htm
+    外事动态: http://office.cbeis.zju.edu.cn/23383/list.htm
+  实验中心:
+    通知公告: http://office.cbeis.zju.edu.cn/23384/list.htm
+    职责制度: http://office.cbeis.zju.edu.cn/23385/list.htm
+    实践教学: http://office.cbeis.zju.edu.cn/23386/list.htm
+    设备管理: http://office.cbeis.zju.edu.cn/23387/list.htm
+  教工之家:
+    最新通知: http://office.cbeis.zju.edu.cn/23389/list.htm
+
+
+
+
+

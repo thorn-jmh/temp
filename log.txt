@@ -1,0 +1,51 @@
+2022-01-28 15:37:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F1028%2Fc53709a2436642%2Fpage.psp> from <GET http://yunfeng.zju.edu.cn/on/2021/1028/c53709a2436642/page.psp>
+2022-01-28 15:37:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F1021%2Fc53709a2433183%2Fpage.psp> from <GET http://yunfeng.zju.edu.cn/on/2021/1021/c53709a2433183/page.psp>
+2022-01-28 15:37:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F1025%2Fc53712a2434378%2Fpage.psp> (referer: None)
+2022-01-28 15:37:22 [scrapy.core.scraper] WARNING: Dropped: content of HTMLContentItem can not be empty.
+{'url': 'http://yunfeng.zju.edu.cn/on/2021/1025/c53712a2434378/page.htm'}
+2022-01-28 15:37:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F1018%2Fc53709a2431538%2Fpage.psp> from <GET http://yunfeng.zju.edu.cn/on/2021/1018/c53709a2431538/page.psp>
+2022-01-28 15:37:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2020%2F1209%2Fc53525a2229370%2Fpage.psp> (referer: None)
+2022-01-28 15:37:25 [scrapy.core.scraper] WARNING: Dropped: content of HTMLContentItem can not be empty.
+{'url': 'http://yunfeng.zju.edu.cn/on/2020/1209/c53525a2229370/page.htm'}
+2022-01-28 15:37:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F1018%2Fc53709a2431533%2Fpage.psp> from <GET http://yunfeng.zju.edu.cn/on/2021/1018/c53709a2431533/page.psp>
+2022-01-28 15:37:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F0622%2Fc53712a2397514%2Fpage.psp> (referer: None)
+2022-01-28 15:37:28 [scrapy.core.scraper] WARNING: Dropped: content of HTMLContentItem can not be empty.
+{'url': 'http://yunfeng.zju.edu.cn/on/2021/0622/c53712a2397514/page.htm'}
+2022-01-28 15:37:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F1012%2Fc53709a2429703%2Fpage.psp> from <GET http://yunfeng.zju.edu.cn/on/2021/1012/c53709a2429703/page.psp>
+2022-01-28 15:37:29 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 4 pages/min), scraped 10 items (at 10 items/min)
+2022-01-28 15:37:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F0324%2Fc53712a2270969%2Fpage.psp> (referer: None)
+2022-01-28 15:37:29 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 4 pages/min), scraped 26 items (at 26 items/min)
+2022-01-28 15:37:29 [scrapy.core.scraper] WARNING: Dropped: content of HTMLContentItem can not be empty.
+{'url': 'http://yunfeng.zju.edu.cn/on/2021/0324/c53712a2270969/page.htm'}
+2022-01-28 15:37:29 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 10 pages/min), scraped 15 items (at 15 items/min)
+2022-01-28 15:37:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F1017%2Fc53709a2431388%2Fpage.psp> from <GET http://yunfeng.zju.edu.cn/on/2021/1017/c53709a2431388/page.psp>
+2022-01-28 15:37:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zjuam.zju.edu.cn/cas/login?service=http%3A%2F%2Fyunfeng.zju.edu.cn%2Fon%2F2021%2F0107%2Fc53712a2242298%2Fpage.psp> (referer: None)
+2022-01-28 15:37:31 [scrapy.core.scraper] WARNING: Dropped: content of HTMLContentItem can not be empty.
+{'url': 'http://yunfeng.zju.edu.cn/on/2021/0107/c53712a2242298/page.htm'}
+2022-01-28 15:37:31 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-01-28 15:37:31 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 5605,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 49878,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 11,
+ 'downloader/response_status_count/302': 10,
+ 'elapsed_time_seconds': 61.186534,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 1, 28, 7, 37, 31, 73426),
+ 'httpcompression/response_bytes': 210013,
+ 'httpcompression/response_count': 11,
+ 'item_dropped_count': 6,
+ 'item_dropped_reasons_count/DropItem': 6,
+ 'item_scraped_count': 15,
+ 'log_count/DEBUG': 344,
+ 'log_count/INFO': 133,
+ 'log_count/WARNING': 22,
+ 'response_received_count': 11,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'start_time': datetime.datetime(2022, 1, 28, 7, 36, 29, 886892)}
+2022-01-28 15:37:31 [scrapy.core.engine] INFO: Spider closed (finished)

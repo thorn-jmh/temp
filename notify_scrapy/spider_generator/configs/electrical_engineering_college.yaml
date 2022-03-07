@@ -1,0 +1,47 @@
+version: '3.3'
+
+name: electrical_engineering_college
+source: 15
+publisher: 电气工程学院
+initial_page: 1
+list_xpath: "//ul[@class=\"news_list list2\"]/li"
+title_xpath: ".//a/text()"
+url_xpath: ".//a/@href"
+publish_time_xpath: "./span[@class=\"news_meta\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  本科生教育: 
+    信息公告: http://ee.office.zju.edu.cn/33869/list.htm
+    办事指南: http://ee.office.zju.edu.cn/33870/list.htm
+    主修专业确认: http://ee.office.zju.edu.cn/33871/list.htm
+    对外交流: http://ee.office.zju.edu.cn/33872/list.htm
+    爱迪生实验班: http://ee.office.zju.edu.cn/33873/list.htm
+    科研训练&竞赛: http://ee.office.zju.edu.cn/33874/list.htm
+    实习与实践: http://ee.office.zju.edu.cn/33875/list.htm
+    卓越工程师计划: http://ee.office.zju.edu.cn/33876/list.htm
+    毕业设计: http://ee.office.zju.edu.cn/33877/list.htm
+    课程与实验室建设: http://ee.office.zju.edu.cn/33878/list.htm
+    免试研究生推荐: http://ee.office.zju.edu.cn/33879/list.htm
+    教学事务: http://ee.office.zju.edu.cn/33880/list.htm
+    资料下载: http://ee.office.zju.edu.cn/33881/list.htm    
+    文件汇编: http://ee.office.zju.edu.cn/wjhb/list.htm
+  国际交流: 
+    国际交流项目: http://ee.office.zju.edu.cn/33903/list.htm
+  学生工作: 
+    信息公告: http://ee.office.zju.edu.cn/33906/list.htm
+    学生活动: http://ee.office.zju.edu.cn/33907/list.htm
+    党团建设: http://ee.office.zju.edu.cn/33908/list.htm
+    荣誉成果: http://ee.office.zju.edu.cn/33909/list.htm
+  就业服务: 
+    重要通知: http://ee.office.zju.edu.cn/33912/list.htm
+    招聘资讯:
+      招聘信息: http://ee.office.zju.edu.cn/33914/list.htm
+      招聘实习: http://ee.office.zju.edu.cn/33916/list.htm
+      考研调剂: http://ee.office.zju.edu.cn/33917/list.htm
+    生涯规划: 
+      就业指导与培训: http://ee.office.zju.edu.cn/jzpx/list.htm
+      职规大赛: http://ee.office.zju.edu.cn/51850/list.htm
+      生涯资讯: http://ee.office.zju.edu.cn/51851/list.htm
+      资讯预约: http://ee.office.zju.edu.cn/zxyy/list.htm

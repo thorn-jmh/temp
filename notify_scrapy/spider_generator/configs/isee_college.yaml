@@ -1,0 +1,58 @@
+version: '3.3'
+
+
+# WARNING: The spider need to be modified.
+
+name: isee_college
+source: 20
+publisher: 信息与电子工程学院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w10\"]/li[@class=\"list_guild\"]"
+title_xpath: ".//p[@class=\"content over2\"]//a/@title"
+url_xpath: ".//p[@class=\"content over2\"]//a/@href"
+publish_time_xpath: ".//div[@class=\"time fl\"]/p/text()"
+publish_time_xpath_extra: ".//div[@class=\"time fl\"]/h3/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  教学思政:
+    本科生教育:
+      培养方案: http://www.isee.zju.edu.cn/21061/list.htm
+      管理文件: http://www.isee.zju.edu.cn/21062/list.htm
+      表格下载: http://www.isee.zju.edu.cn/21063/list.htm
+    研究生教育:
+      培养方案: http://www.isee.zju.edu.cn/21064/list.htm
+      学位申请: http://www.isee.zju.edu.cn/21065/list.htm
+      学位论文: http://www.isee.zju.edu.cn/21066/list.htm
+      文件汇编: http://www.isee.zju.edu.cn/21067/list.htm
+      表格下载: http://www.isee.zju.edu.cn/21068/list.htm
+    学子在线:
+      本科生: http://www.isee.zju.edu.cn/21081/list.htm
+      研究生:
+        党团建设: http://www.isee.zju.edu.cn/21082/list.psp
+      新闻动态: http://www.isee.zju.edu.cn/xwdt/list.psp
+    工程硕士: http://www.isee.zju.edu.cn/21070/list.htm
+  招生工作:
+    本科生招生:
+      招生信息: http://www.isee.zju.edu.cn/21107/list.htm
+    研究生招生:
+      招生信息: http://www.isee.zju.edu.cn/21109/list.htm
+  就业工作:
+    招聘信息: http://www.isee.zju.edu.cn/21110/list.htm
+    就业新闻: http://www.isee.zju.edu.cn/jyxw/list.htm
+    生涯辅导:
+      经验交流: http://www.isee.zju.edu.cn/jyjl/list.htm
+      就业出口: http://www.isee.zju.edu.cn/21112/list.htm
+      文件表格: http://www.isee.zju.edu.cn/21113/list.htm
+  国际交流:
+    交流动态: http://www.isee.zju.edu.cn/50899/list.htm
+  继续教育:
+    新闻动态: http://www.isee.zju.edu.cn/50904/list.htm
+    招生信息: http://www.isee.zju.edu.cn/21069/list.htm
+    工程硕士: http://www.isee.zju.edu.cn/50906/list.htm
+    培训项目: http://www.isee.zju.edu.cn/21071/list.htm
+    表格下载: http://www.isee.zju.edu.cn/21072/list.htm
+
+
+

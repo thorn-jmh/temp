@@ -1,0 +1,72 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: architecture_college
+source: 4
+publisher: 建筑工程学院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w6\"]/ul/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"news_meta\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  首页: 
+    重点提示: http://www.ccea.zju.edu.cn/7969/list.htm
+    学术信息: http://www.ccea.zju.edu.cn/xsxx1/list.htm
+  党政管理: 
+    党务工作: 
+      党务信息: http://www.ccea.zju.edu.cn/dwxx/list.htm
+      专题教育: http://www.ccea.zju.edu.cn/ztjy/list.htm
+    院务公开:
+      院务信息: http://www.ccea.zju.edu.cn/ywxx/list.htm
+  教育教学:
+    最新消息: http://www.ccea.zju.edu.cn/zxxx_23236/list.htm
+    本科生教育:
+      教学教务: http://www.ccea.zju.edu.cn/18410/list.htm
+      专业确认: http://www.ccea.zju.edu.cn/18411/list.htm
+      推荐免试: http://www.ccea.zju.edu.cn/18412/list.htm
+      科研训练: http://www.ccea.zju.edu.cn/18413/list.htm
+      结构大赛: http://www.ccea.zju.edu.cn/18414/list.htm
+    实习信息: http://www.ccea.zju.edu.cn/18409/list.htm
+  学生工作:
+    最新消息: http://www.ccea.zju.edu.cn/zxxx_23233/list.htm
+    党团建设:
+      党建工作: http://www.ccea.zju.edu.cn/18463/list1.htm
+      团建工作: http://www.ccea.zju.edu.cn/18464/list.htm
+    学生事务:
+      评奖评优: http://www.ccea.zju.edu.cn/19119/list.htm
+      学生资助: http://www.ccea.zju.edu.cn/19120/list.htm
+      其他事务: http://www.ccea.zju.edu.cn/qtsw/list.htm
+    实践创新:
+      实践创新: http://www.ccea.zju.edu.cn/18460/list.htm
+      学生科技: http://www.ccea.zju.edu.cn/19123/list.htm
+      素质拓展: http://www.ccea.zju.edu.cn/19124/list.htm
+      社会实践: http://www.ccea.zju.edu.cn/19125/list.htm
+      志愿服务: http://www.ccea.zju.edu.cn/19126/list.htm
+    学生组织:
+      学生会: http://www.ccea.zju.edu.cn/19127/list.htm
+      学生社团: http://www.ccea.zju.edu.cn/19129/list.htm
+      学生风采: http://www.ccea.zju.edu.cn/19130/list.htm
+  国际交流:
+    国际交流: http://www.ccea.zju.edu.cn/8024/list.htm
+    交流项目:
+      交流项目: http://www.ccea.zju.edu.cn/8120/list.htm
+      【Go Global】: http://www.ccea.zju.edu.cn/wwowwlobalwjzgcxygjsytzjlxm/list.htm
+    交流资助:
+      交流赞助: http://www.ccea.zju.edu.cn/gpzz/list.htm
+      公派资助: http://www.ccea.zju.edu.cn/12261/list.htm
+      会议资助: http://www.ccea.zju.edu.cn/12262/list.htm
+  招生工作:
+    研究生招生: http://www.ccea.zju.edu.cn/18473/list.htm
+  就业工作:
+    通知公告:
+      学院通知: http://www.ccea.zju.edu.cn/xytz/list.htm
+      宣讲会安排: http://www.ccea.zju.edu.cn/xjhap/list.htm
+      招聘信息: http://www.ccea.zju.edu.cn/zpxx/list.htm
+      公务员选调生公告: http://www.ccea.zju.edu.cn/gwyxdsgg/list.htm

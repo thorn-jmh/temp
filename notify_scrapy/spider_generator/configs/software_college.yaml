@@ -1,0 +1,36 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: software_college
+source: 40
+publisher: 软件学院
+initial_page: 1
+list_xpath: "//div[@class=\"lm_new\"]/ul/li"
+title_xpath: ".//a/text()"
+url_xpath: ".//a/@href"
+publish_time_xpath: "./span[@class=\"fr\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  教学管理:
+    教务信息: http://www.cst.zju.edu.cn/36216/list.htm
+    论文管理: http://www.cst.zju.edu.cn/36217/list.htm
+  思政工作:
+    重要信息: http://www.cst.zju.edu.cn/36224/list.htm
+    党团信息: http://www.cst.zju.edu.cn/36227/list.htm
+    评奖评优: http://www.cst.zju.edu.cn/36228/list.htm
+    困难资助:
+      困难资助: http://www.cst.zju.edu.cn/36229/list.htm
+      勤工助学: http://www.cst.zju.edu.cn/36270/list.htm
+      困难补助: http://www.cst.zju.edu.cn/36271/list.htm
+      助学贷款: http://www.cst.zju.edu.cn/36272/list.htm
+  实习就业:
+    学生实习:
+      招聘信息: http://www.cst.zju.edu.cn/36273/list.htm
+    国际实习: http://www.cst.zju.edu.cn/36235/list.htm
+    学生就业:
+      招聘信息: http://www.cst.zju.edu.cn/36236/list.htm

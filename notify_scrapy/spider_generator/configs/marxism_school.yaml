@@ -1,0 +1,19 @@
+version: '3.3'
+
+name: marxism_school
+source: 27
+publisher: 马克思主义学院
+initial_page: 1
+list_xpath: "//ul[@class=\"cg-news-list\"]/li"
+title_xpath: ".//a/text()"
+url_xpath: ".//a/@href"
+publish_time_xpath: "./span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  学院通知: http://marx.zju.edu.cn/23482/list.htm
+  图片新闻: http://marx.zju.edu.cn/23485/list.htm
+  学院动态: http://marx.zju.edu.cn/23481/list.htm
+  学术学科: 
+    国际交流: http://marx.zju.edu.cn/23464/list.htm

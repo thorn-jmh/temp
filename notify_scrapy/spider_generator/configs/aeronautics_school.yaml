@@ -1,0 +1,44 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: aeronautics_school
+source: 1
+publisher: 航空航天学院
+initial_page: 0
+list_xpath: "//ul[@class=\"cg-news-list\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: and_page_equals
+publisher_group: 专业院系
+pages:
+  首页:
+    通知公告:
+      本科生教育: http://saa.zju.edu.cn/redir.php?catalog_id=100
+      学生工作: http://saa.zju.edu.cn/redir.php?catalog_id=105
+    会议室申请: http://saa.zju.edu.cn/redir.php?catalog_id=34
+    学术讲座: http://saa.zju.edu.cn/redir.php?catalog_id=12241
+  本科生教育:
+    本科生招生: http://saa.zju.edu.cn/redir.php?catalog_id=16
+    本科生培养: http://saa.zju.edu.cn/redir.php?catalog_id=17
+    本科生就业: http://saa.zju.edu.cn/redir.php?catalog_id=18
+  研究生教育:
+    研究生招生: http://saa.zju.edu.cn/redir.php?catalog_id=19
+  对外交流:
+    交流活动: http://saa.zju.edu.cn/redir.php?catalog_id=12163
+  就业指导:
+    重点引导: http://saa.zju.edu.cn/redir.php?catalog_id=105224
+    通知公告: http://saa.zju.edu.cn/redir.php?catalog_id=105225
+    生涯规划:
+      生涯咨询: http://saa.zju.edu.cn/redir.php?catalog_id=107248
+    招聘信息: http://saa.zju.edu.cn/redir.php?catalog_id=105227
+    下载专区: http://saa.zju.edu.cn/redir.php?catalog_id=105228
+    办事指南: http://saa.zju.edu.cn/redir.php?catalog_id=105230
+    综合服务:
+      毕业生生源介绍: http://saa.zju.edu.cn/redir.php?catalog_id=107253
+      常见问题指引: http://saa.zju.edu.cn/redir.php?catalog_id=107255
+

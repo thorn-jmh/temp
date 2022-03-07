@@ -1,0 +1,37 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: psychology_depart
+source: 37
+publisher: 心理与行为科学系
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w6\"]/ul/li"
+title_xpath: ".//a/text()"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  本科生教育:
+    最新通知: http://www.psych.zju.edu.cn/27653/list.htm
+    新闻动态: http://www.psych.zju.edu.cn/27654/list.htm
+    培养方案: http://www.psych.zju.edu.cn/27655/list.htm
+    规章制度: http://www.psych.zju.edu.cn/27656/list.htm
+    学生科研: http://www.psych.zju.edu.cn/27657/list.htm
+  科学研究:
+    学生活动: http://www.psych.zju.edu.cn/27619/list.htm
+    学术成果: http://www.psych.zju.edu.cn/27620/list.htm
+    学术日历: http://www.psych.zju.edu.cn/xsrl/list.htm
+  学生天地:
+    新闻动态: http://www.psych.zju.edu.cn/27623/list.htm
+    团建园地: http://www.psych.zju.edu.cn/27624/list.htm
+    评奖评优: http://www.psych.zju.edu.cn/27625/list.htm
+    学生资助: http://www.psych.zju.edu.cn/27626/list.htm
+    学生组织: http://www.psych.zju.edu.cn/27627/list.htm
+  国际交流:
+    新闻动态: http://www.psych.zju.edu.cn/27641/list.htm
+    最新通知: http://www.psych.zju.edu.cn/27640/list.htm

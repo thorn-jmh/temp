@@ -1,0 +1,59 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: chemistry_depart
+source: 8
+publisher: 化学系
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w12\"]/li"
+title_xpath: ".//span[@class=\"item\"]/text()"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"date\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  首页:
+    通知公告: http://office.chem.zju.edu.cn/tz/list.htm
+  本科生教育:
+    信息公告: http://office.chem.zju.edu.cn/bksjy/list.htm
+    办事指南: http://office.chem.zju.edu.cn/55181/list.htm
+    专业确认: http://office.chem.zju.edu.cn/55182/list.htm
+    保研免推: http://office.chem.zju.edu.cn/55183/list.htm
+    毕业论文: http://office.chem.zju.edu.cn/34485/list.htm
+    实践竞赛: http://office.chem.zju.edu.cn/55184/list.htm
+    文件汇编: http://office.chem.zju.edu.cn/55185/list.htm
+    培养方案: http://office.chem.zju.edu.cn/34486/list.htm
+    资料下载: http://office.chem.zju.edu.cn/zlxz_55186/list.htm
+  研究生教育:
+    招生专栏: http://office.chem.zju.edu.cn/34491/list.htm
+  科学研究:
+    公示公告: http://office.chem.zju.edu.cn/kxyj/list.htm
+    科研文件: http://office.chem.zju.edu.cn/34496/list.htm
+  国际交流:
+    公示公告: http://office.chem.zju.edu.cn/34489/list.htm
+    交流项目: http://office.chem.zju.edu.cn/55195/list.htm
+  学生工作:
+    信息公告: http://office.chem.zju.edu.cn/xgtw/list.htm
+    团建园地: http://office.chem.zju.edu.cn/34508/list.htm
+    奖助学金: http://office.chem.zju.edu.cn/34510/list.htm
+  就业服务:
+    通知公告: http://office.chem.zju.edu.cn/jyxx/list.htm
+    重点引导: http://office.chem.zju.edu.cn/52030/list.htm
+    招聘信息: http://office.chem.zju.edu.cn/zzrsdzcps/list.htm
+    生涯规划:
+      经验分享: http://office.chem.zju.edu.cn/jywfx/list.htm
+  党员之家:
+    信息公告:
+      信息公告: http://office.chem.zju.edu.cn/53455/list.htm
+      公示公告: http://office.chem.zju.edu.cn/53461/list.htm
+    学习园地: http://office.chem.zju.edu.cn/53457/list.htm
+  实验室管理:
+    信息公告: http://office.chem.zju.edu.cn/34516/list.htm
+    办事指南: http://office.chem.zju.edu.cn/bslc/list.htm
+    安全教育: http://office.chem.zju.edu.cn/34517/list.htm
+    规章制度: http://office.chem.zju.edu.cn/34518/list.htm
+    资料下载: http://office.chem.zju.edu.cn/bgxz/list.htm

@@ -1,0 +1,43 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: life_sciences_college
+source: 25
+publisher: 生命科学学院
+initial_page: 0
+list_xpath: "//ul[@class=\"cg-news-list\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"art-date\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 专业院系
+pages:
+  本科生教育:
+    本科通知: http://www.cls.office.zju.edu.cn/25871/list.htm
+    专业培养: http://www.cls.office.zju.edu.cn/25872/list.htm
+    教学动态: http://www.cls.office.zju.edu.cn/25873/list.htm
+    服务信息: http://www.cls.office.zju.edu.cn/25874/list.htm
+    海外交流: http://www.cls.office.zju.edu.cn/25875/list.htm
+  学院动态: http://www.cls.office.zju.edu.cn/25819/list.htm
+  学生思政: 
+    队伍风采: http://www.cls.office.zju.edu.cn/dwfc/list.htm
+    学生党建:
+      政策文件: http://www.cls.office.zju.edu.cn/zcwj_44494/list.htm
+      组织设置: http://www.cls.office.zju.edu.cn/zzsz_44495/list.htm
+      公示公告: http://www.cls.office.zju.edu.cn/gsgg/list.htm
+      支部动态: http://www.cls.office.zju.edu.cn/zbdt/list.htm
+    青春团学:
+      组织设置: http://www.cls.office.zju.edu.cn/zzsz_44498/list.htm
+      青春动态: http://www.cls.office.zju.edu.cn/qcdt/list.htm
+      实践服务: http://www.cls.office.zju.edu.cn/sjfw/list.htm
+      创新创业: http://www.cls.office.zju.edu.cn/cxcy/list.htm
+      文艺体育: http://www.cls.office.zju.edu.cn/wyty/list.htm
+    学生事务: 
+      文件汇编: http://www.cls.office.zju.edu.cn/wjhb/list.htm
+      评奖评优: http://www.cls.office.zju.edu.cn/pjpy/list.htm
+      勤工助贷: http://www.cls.office.zju.edu.cn/qgzd/list.htm
+      心理健康: http://www.cls.office.zju.edu.cn/xljk/list.htm

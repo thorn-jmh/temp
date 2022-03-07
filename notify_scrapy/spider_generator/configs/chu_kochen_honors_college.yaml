@@ -1,0 +1,76 @@
+version: '3.3'
+
+# WARNING: This website contains sticky notices.
+# Set max_sticky to some value in the generated spider.
+# For details, see https://git.zjuqsc.com/notify/notify-scrapy/wikis/Sticky-Notices
+
+name: chu_kochen_honors_college
+source: 9
+publisher: 竺可桢学院
+initial_page: 1
+list_xpath: "//ul[@class=\"news_list list2\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"news_meta\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 学院行政
+pages:
+  人才培养:
+    培养方案: http://office.ckc.zju.edu.cn/34977/list.htm
+  招生选拔:
+    新生选拔: http://office.ckc.zju.edu.cn/34975/list.htm
+    二次选拔: http://office.ckc.zju.edu.cn/ecxb/list.htm
+    交叉复合班选拔: http://office.ckc.zju.edu.cn/jcfhbxb/list.htm
+  教学教务:
+    工作通知: http://office.ckc.zju.edu.cn/gztz/list.htm
+    学生下载专区: http://office.ckc.zju.edu.cn/34981/list.htm
+  国际交流与合作:
+    活动通知: http://office.ckc.zju.edu.cn/54298/list.htm
+    海外科研实习项目: http://office.ckc.zju.edu.cn/hwkysxxm/list.htm
+  发展联络:
+    院友资讯: http://office.ckc.zju.edu.cn/54301/list.htm
+    院友活动: http://office.ckc.zju.edu.cn/54302/list.htm
+  学生事务:
+    最新通知: http://office.ckc.zju.edu.cn/zxtz/list.htm
+    评奖评优: http://office.ckc.zju.edu.cn/34986/list.htm
+    勤工助学: http://office.ckc.zju.edu.cn/34987/list.htm
+    困难资助: http://office.ckc.zju.edu.cn/34989/list.htm
+    心理教育: http://office.ckc.zju.edu.cn/34988/list.htm
+  党团建设:
+    最新通知: http://office.ckc.zju.edu.cn/34994/list.htm
+    学生党建: http://office.ckc.zju.edu.cn/34995/list.htm
+    学生团建:
+      办公室: http://office.ckc.zju.edu.cn/35235/list.htm
+      组织部: http://office.ckc.zju.edu.cn/35236/list.htm
+      学研部: http://office.ckc.zju.edu.cn/35237/list.htm
+      青志部: http://office.ckc.zju.edu.cn/35238/list.htm
+      社实部: http://office.ckc.zju.edu.cn/ssb/list.htm
+      素测部: http://office.ckc.zju.edu.cn/35239/list.htm
+      宣传部: http://office.ckc.zju.edu.cn/35240/list.htm
+      班团风采: http://office.ckc.zju.edu.cn/35241/list.htm
+      军训专栏: http://office.ckc.zju.edu.cn/jxzl/list.htm
+    学生会: http://office.ckc.zju.edu.cn/34997/list.htm
+  文件汇编:
+    学院文件: http://office.ckc.zju.edu.cn/35002/list.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

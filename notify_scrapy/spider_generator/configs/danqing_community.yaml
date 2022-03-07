@@ -1,0 +1,39 @@
+version: '3.3'
+
+name: danqing_community
+source: 12
+publisher: 丹阳青溪学园
+initial_page: 1
+list_xpath: "//ul[@class=\"news_list list2\"]/li"
+title_xpath: ".//a/@title"
+url_xpath: ".//a/@href"
+publish_time_xpath: ".//span[@class=\"news_meta\"]/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 学园行政
+pages:
+  首页:
+    最新通知: http://dqxy.zju.edu.cn/51432/list.htm
+    公示公告: http://dqxy.zju.edu.cn/51446/list.psp
+    活动预告: http://dqxy.zju.edu.cn/51434/list.htm
+  党建园地:
+    党建园地: http://dqxy.zju.edu.cn/51441/list.htm
+    最新通知: http://dqxy.zju.edu.cn/51453/list.htm
+  团学园地:
+    最新通知: http://dqxy.zju.edu.cn/51457/list.htm
+    基础团务: http://dqxy.zju.edu.cn/51458/list.htm
+    青年志愿者: http://dqxy.zju.edu.cn/51459/list.htm
+    社会实践: http://dqxy.zju.edu.cn/51460/list.htm
+    素质拓展: http://dqxy.zju.edu.cn/51461/list.htm
+    学生活动: http://dqxy.zju.edu.cn/51462/list.htm
+  学业园地:
+    最新通知: http://dqxy.zju.edu.cn/51429/list.htm
+    教务管理: http://dqxy.zju.edu.cn/51464/list.htm
+    学业辅导: http://dqxy.zju.edu.cn/51465/list.htm
+    生涯规划: http://dqxy.zju.edu.cn/51466/list.htm
+  学生事务:
+    学生事务: http://dqxy.zju.edu.cn/51430/list.htm
+    最新通知: http://dqxy.zju.edu.cn/51467/list.htm
+    评奖评优: http://dqxy.zju.edu.cn/51468/list.htm
+    学生资助: http://dqxy.zju.edu.cn/51469/list.htm
+    心理健康: http://dqxy.zju.edu.cn/51471/list.htm

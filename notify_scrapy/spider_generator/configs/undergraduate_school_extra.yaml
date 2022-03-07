@@ -1,0 +1,41 @@
+version: '3.3'
+
+name: undergraduate_school_extra
+source: 41
+publisher: 本科生院
+initial_page: 1
+list_xpath: "//div[@id=\"wp_news_w24\"]/li"
+title_xpath: "./a/text()"
+url_xpath: "./a/@href"
+publish_time_xpath: "./span/text()"
+publish_time_format: "%Y-%m-%d"
+pages_converter: list_dot_htm
+publisher_group: 行政部门
+pages:
+  教学培养:
+    专业教育: http://bksy.zju.edu.cn/28324/list.htm
+    课程建设: http://bksy.zju.edu.cn/28326/list.htm
+  学籍管理:
+    办事指南: http://bksy.zju.edu.cn/28337/list.htm
+    注册报到: http://bksy.zju.edu.cn/28338/list.htm
+    学籍异动: http://bksy.zju.edu.cn/28339/list.htm
+    主修专业确认: http://bksy.zju.edu.cn/28340/list.htm
+    毕业于学位: http://bksy.zju.edu.cn/28341/list.htm
+    保送研究生: http://bksy.zju.edu.cn/28342/list.htm
+    政策解答: http://bksy.zju.edu.cn/28343/list.htm
+    出国成绩办理预约: http://bksy.zju.edu.cn/28344/list.htm
+  实践教学:
+    实验: http://bksy.zju.edu.cn/28346/list.htm
+    实习: http://bksy.zju.edu.cn/28347/list.htm
+    毕业论文(设计): http://bksy.zju.edu.cn/28348/list.htm
+  文件汇编:
+    内部管理: http://bksy.zju.edu.cn/nbgl/list.htm
+    学生日常学习事务: http://bksy.zju.edu.cn/28375/list.htm
+    竺可桢学院教学事务: http://bksy.zju.edu.cn/28379/list.htm
+    其他: http://bksy.zju.edu.cn/28381/list.htm
+
+
+
+
+
+
